@@ -1,0 +1,21 @@
+{
+  "name": "ticks-tip",
+  "version": "1.0.0",
+  "description": "tips!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "install-client": "cd ./client && npm i",
+    "install-server": "cd ./server && npm i",
+    "install-all": "npm i && npm run install-client && npm run install-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "electron": "^6.1.5",
+    "electron-is-dev": "^1.1.0"
+  }
+}

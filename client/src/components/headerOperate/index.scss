@@ -1,0 +1,45 @@
+@import '../../asset/common.scss';
+.header-operate{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    &_bar{
+        float: right;
+        width: 20vw;
+        li{
+            height: $header_h;
+            float: right;
+            line-height: $header_h;
+            margin-right: 20px;
+            @extend .curpointer;
+            @extend .app-no-drag;
+            &:hover{
+                color: #79b6f2;
+            }
+        }
+        &_avatar{
+            position: relative;
+            &:hover{
+                .header-operate_bar_avatar_operate{
+                    display: block;
+                } 
+            }
+            &_operate{
+                position: absolute;
+                display: none;
+                background: red;
+                color: #000000;
+                width: 50px;
+                text-align: center;
+                box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+                            0px 0px 20px rgba(0,0,0,0.1) inset;
+                background: #fff;
+                border-radius: 10%;
+                top: $header_h;
+                left: 0
+            }
+        }
+    }
+}

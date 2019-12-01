@@ -1,0 +1,47 @@
+@import '../asset/common.scss';
+.main_header{
+    background: #ffffff;
+    padding: 0 ;
+    -webkit-app-region: drag;
+    height: $header_h;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    top: 0;
+    width: 100vw;;
+} 
+.main_body{
+    width: 100vw;
+    overflow: hidden;
+    height: $body_h;
+    position: fixed;
+    top: $header_h;
+    &__left_sider_bar{
+        height: $body_h;
+        width: $sidebar_w!important;
+        position: fixed;
+        left: 0;
+    }
+    &__menu{
+        width: $sidebar_w!important;
+        height: $body_h;
+        .ant-menu-item:nth-child(1){
+            margin-top: 0;
+        }
+    }
+    &__main{
+        margin-left: $sidebar_w ;
+        width: $main_w;
+        height: $body_h;
+        background: #eee;
+        &__content{
+            position: relative;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            width: $main_w;
+            height: $body_h;
+            overflow: auto;
+        }
+    }
+}
+

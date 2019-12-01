@@ -1,0 +1,23 @@
+@import '../../asset/common.scss';
+.page-tips{
+    margin: 20px;
+    &__eidt_line{
+        cursor: pointer;
+        -moz-user-select: -moz-none; 
+        -moz-user-select: none; 
+        -o-user-select:none; 
+        -khtml-user-select:none; 
+        -webkit-user-select:none; 
+        -ms-user-select:none; 
+        user-select:none
+        &:nth-of-type(1){
+            margin-top: 20px;
+        }
+    }
+    &__add{
+        position: fixed;
+        top: $header_h + 1vh;
+        right: 10px;
+        font-size: 12px;
+    }
+}
